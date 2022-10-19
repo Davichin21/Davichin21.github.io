@@ -9,6 +9,8 @@
 }
 
 #canvas {
+  width:80px;
+  height:80px;
   position: relative; 
   left: 100px;
   top: 100px;
