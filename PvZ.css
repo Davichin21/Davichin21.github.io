@@ -9,7 +9,7 @@
 }
 
 #canvas {
-  position: absolute; 
+  position: relative; 
   left: 100px;
   top: 100px;
   display: block;
