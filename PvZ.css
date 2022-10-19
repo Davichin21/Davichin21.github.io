@@ -8,12 +8,21 @@
   padding: 0%;
 }
 
+#animation_container {
+  background-color:rgba(255, 255, 255, 0.00); 
+  width:80px; 
+  height:80px;
+  position: relative;
+  left: 290px; 
+  top: 250px; 
+}
+
 #canvas {
   width:80px;
   height:80px;
   position: relative; 
-  left: 100px;
-  top: 100px;
+  left: 290px;
+  top: 250px;
   display: block;
   background-color:rgba(255, 255, 255, 0.00);
 }
@@ -24,7 +33,7 @@
   width:80px;
   height:80px;
   position: relative;
-  left: 100px; 
-  top: 100px; 
+  left: 290px; 
+  top: 250px; 
   display: block;
 }
