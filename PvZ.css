@@ -18,3 +18,13 @@
   background-color:rgba(255, 255, 255, 0.00);
 }
 
+#dom_overlay_container {
+  pointer-events:none; 
+  overflow:hidden;
+  width:80px;
+  height:80px;
+  position: relative;
+  left: 100px; 
+  top: 100px; 
+  display: block;
+}
