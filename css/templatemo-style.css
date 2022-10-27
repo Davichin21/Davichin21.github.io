@@ -322,7 +322,7 @@ p, address {
 
 .tm-nav-link.active,
 .tm-nav-link:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .tm-welcome-section {
@@ -449,8 +449,14 @@ p, address {
   color: #2F956D;
   background-color: transparent;
 }
- /*--------------------------------------------------------- DINERO-------------------------------------------------------------*/
-  #tm-pagging-money{
+.tm-paging-link.active,
+.tm-paging-link:hover {
+  background-color: #2F956D;
+  color: white;
+} 
+
+/*--------------------------------------------------------- DINERO-------------------------------------------------------------*/
+#tm-pagging-money{
   position: sticky;
   top: 2%;
   left: 50%;
@@ -465,13 +471,44 @@ p, address {
   background-color: #2F956D;
   color: #ffff;
   user-select: none;
-
-
 } 
-.tm-paging-link.active,
-.tm-paging-link:hover {
+
+@media (max-width: 400px) {
+  #tm-pagging-money{
+  position: sticky;
+  top: 5%;
+  left: 0%;
+  transform: translate(0%, 0);
+  width: 330px; /*antes era 300*/
+  text-align: center;
+  z-index: 1;
+  margin: 7px 7px 30px 8%;
+  padding: 8px 24px;
+  border: 1px solid #2F956D;
+  font-size: 1.35rem;
   background-color: #2F956D;
-  color: white;
+  color: #ffff;
+  user-select: none;
+} 
+/*
+@media (max-width: 400px) {
+  #tm-pagging-money{
+  position: sticky;
+  top: 2%;
+  left: 0%;
+  transform: translate(0%, 0);
+  width: 330px; 
+  text-align: center;
+  z-index: 1;
+  margin: 7px 7px 30px 8%;
+  padding: 8px 24px;
+  border: 1px solid #2F956D;
+  font-size: 1.35rem;
+  background-color: #2F956D;
+  color: #ffff;
+  user-select: none;
+} 
+*/
 }
 /*------------------------------------------------------------- BOTONES ---------------------------------------------------------*/
 .comprarOVender{

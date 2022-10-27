@@ -20,17 +20,17 @@
 				<div class="tm-header">
 					<div class="row tm-header-inner">
 						<div class="col-md-6 col-12">
-							<img src="img/TEDM-logo-blanco.png" alt="Logo" class="tm-site-logo" /> <!--LOGO DEL SITIO-->
+							<img src="img/TEDM-logo-blanco.png" alt="Logo" class="tm-site-logo" id="logoPag"/> <!--LOGO DEL SITIO-->
 							<div class="tm-site-text-box">
-								<h1 class="tm-site-title" >Todo el dinero del Mundo</h1>
-								<h6 class="tm-site-description">¿Y si tuvieras todo el dinero del mundo?</h6>	
+								<h1 class="tm-site-title" id="tm-site-title" >Todo el dinero del Mundo</h1>
+								<h6 class="tm-site-description" id="tm-site-description">¿Y si tuvieras todo el dinero del mundo?</h6>	
 							</div>
 						</div>
 						<nav class="col-md-6 col-12 tm-nav">
 							<ul class="tm-nav-ul">
 								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">Inicio</a></li>
 								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link">Acerca de</a></li>
-								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contáctanos</a></li>
+								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contáctanos</a></li> 
 							</ul>
 						</nav>	
 					</div>
@@ -56,7 +56,6 @@
 			</div>
             <p id="tm-pagging-money" onclick="dineroRestante()">s/ 370 000 000 000 000.00</p>
 
-
 			<div id="undiv">
 				<form oninput="colorCar()">
 					<select id="cars" name="cars" value="default">
@@ -76,7 +75,7 @@
 						<option class="opcion" value="deAaZ">de A a Z</option>
 						<option class="opcion" value="deZaA">de Z a A</option>
 
-						
+						col-12 text-center
 						  
 					</select>
 				</form>
@@ -94,161 +93,11 @@
 				
 				<!-- gallery page 2 -->
 				<div id="tm-gallery-page-servicios" class="tm-gallery-page hidden">
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/seccion2/googlePlayPass.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Google Play Pass</h4>
-								<p class="tm-gallery-description">Un mes de Google Play Pass. Tu pase a cientos de juegos y apps increíbles, sin anuncios ni compras dentro de las aplicaciones.</p>
-								<span class="tm-gallery-price">s/ 8.90</span>
-								<span class="cantidadItems"><strong id="cantidad-googlePlayPass">x0</strong></span>
-								<div class="comprarOVender">
-								 <button id="botonComprar" onclick = "comprar(googlePlayPass)">Comprar</button>
-							     <button id="botonVender" onclick="vender(googlePlayPass)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
-								</div>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/seccion2/primeVideo.png" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Amazon Prime Video</h4>
-								<p class="tm-gallery-description">Un mes de Amazon Prime Video. Disfruta de Amazon Originals, además de películas y series populares. ¡Disfruta ahora!</p>
-								<span class="tm-gallery-price">s/ 16.90</span>
-								<span class="cantidadItems"><strong id="cantidad-primeVideo">x0</strong></span>
-								<div class="comprarOVender">
-								 <button id="botonComprar" onclick = "comprar(primeVideo)">Comprar</button>
-							     <button id="botonVender" onclick="vender(primeVideo)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
-								</div>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/seccion2/youtubePremium.png" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">YouTube Premium</h4>
-								<p class="tm-gallery-description">Un mes de YouTube Premium. YouTube y YouTube Music sin anuncios, sin conexión y en segundo plano. </p>
-								<span class="tm-gallery-price">s/ 20.90</span>
-								<span class="cantidadItems"><strong id="cantidad-youtubePremium">x0</strong></span>
-								<div class="comprarOVender">
-								 <button id="botonComprar" onclick = "comprar(youtubePremium)">Comprar</button>
-							     <button id="botonVender" onclick="vender(youtubePremium)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
-								</div>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/seccion2/primeGaming.png" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Prime Gaming</h4>
-								<p class="tm-gallery-description">Un mes de Prime Gaming. Todos los meses, obtén botín para juegos, juegos gratuitos, una suscripción gratuita en Twitch.tv.</p>
-								<span class="tm-gallery-price">s/ 24.50</span>
-								<span class="cantidadItems"><strong id="cantidad-primeGaming">x0</strong></span>
-								<div class="comprarOVender">
-								 <button id="botonComprar" onclick = "comprar(primeGaming)">Comprar</button>
-							     <button id="botonVender" onclick="vender(primeGaming)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
-								</div>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/seccion2/disneyPlus.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Disney+</h4>
-								<p class="tm-gallery-description">Un mes de Disney+. Lo mejor de Disney, Pixar, Marvel, Star Wars y National Geographic. ¡Disfruta ahora en 4k!</p>
-								<span class="tm-gallery-price">s/ 25.90</span>
-								<span class="cantidadItems"><strong id="cantidad-disneyPlus">x0</strong></span>
-								<div class="comprarOVender">
-								 <button id="botonComprar" onclick = "comprar(disneyPlus)">Comprar</button>
-							     <button id="botonVender" onclick="vender(disneyPlus)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
-								</div>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/seccion2/spotifyPremium.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Spotify Premium</h4>
-								<p class="tm-gallery-description">Un mes de Spotify Premium plan Familiar. Reproduce millones de canciones sin anuncios, sin conexión y on-demand.</p>
-								<span class="tm-gallery-price">s/ 29.90</span>
-								<span class="cantidadItems"><strong id="cantidad-spotifyPremium">x0</strong></span>
-								<div class="comprarOVender">
-								 <button id="botonComprar" onclick = "comprar(spotifyPremium)">Comprar</button>
-							     <button id="botonVender" onclick="vender(spotifyPremium)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
-								</div>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/seccion2/hboMax.png" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">HBO Max</h4>
-								<p class="tm-gallery-description">Un mes de HBO Max, la plataforma de streaming de HBO para ver las mejores peliculas, series y todos los nuevos de Max Originals.</p>
-								<span class="tm-gallery-price">s/ 29.90</span>
-								<span class="cantidadItems"><strong id="cantidad-hboMax">x0</strong></span>
-								<div class="comprarOVender">
-								 <button id="botonComprar" onclick = "comprar(hboMax)">Comprar</button>
-							     <button id="botonVender" onclick="vender(hboMax)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
-								</div>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/seccion2/starPlus.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Star+</h4>
-								<p class="tm-gallery-description">Un mes de Star+. Disfruta de todos los episodios de los Simpson, deportes en vivo de ESPN y mucho más.</p>
-								<span class="tm-gallery-price">s/ 37.90</span>
-								<span class="cantidadItems"><strong id="cantidad-starPlus">x0</strong></span>
-								<div class="comprarOVender">
-								 <button id="botonComprar" onclick = "comprar(starPlus)">Comprar</button>
-							     <button id="botonVender" onclick="vender(starPlus)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
-								</div>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/seccion2/discordNitro.png" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Discord Nitro</h4>
-								<p class="tm-gallery-description">Un mes de Discord Nitro. Emojis y avatares animados, etiqueta personalizada, 2 Boosts de Servidor y mucho más.</p>
-								<span class="tm-gallery-price">s/ 40.90</span>
-								<span class="cantidadItems"><strong id="cantidad-discordNitro">x0</strong></span>
-								<div class="comprarOVender">
-								 <button id="botonComprar" onclick = "comprar(discordNitro)">Comprar</button>
-							     <button id="botonVender" onclick="vender(discordNitro)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
-								</div>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/seccion2/netflix.png" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Netflix</h4>
-								<p class="tm-gallery-description">Un mes de Netflix Premium. Películas, series, ánimes, documentales y otros contenidos ilimitados en ultra HD. </p>
-								<span class="tm-gallery-price">s/ 44.90</span>
-								<span class="cantidadItems"><strong id="cantidad-netflixFamiliar">x0</strong></span>
-								<div class="comprarOVender">
-								 <button id="botonComprar" onclick = "comprar(netflixFamiliar)">Comprar</button>
-							     <button id="botonVender" onclick="vender(netflixFamiliar)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
-								</div>
-							</figcaption>
-						</figure>
-					</article>
 				</div> <!-- gallery page 2 -->
 				
 				<!-- ------------------------------------------------- SECCION 3 ---------------------------------------------- -->
 				<div id="tm-gallery-page-propiedades" class="tm-gallery-page hidden">
-					<img src="/img/gallery/seccion3/keepCalm.png" alt="">
+					<img src="img\gallery\seccion3\keepCalm.png" alt="Error">
 					<!-- <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
 							<img src="img/gallery/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
