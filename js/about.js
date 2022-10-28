@@ -13,8 +13,13 @@ c1 = "col-12 text-center";
 c2 = "tm-person-about";
 c3 = "tm-mb-p";
 c4 = "tm-feature-description";
-listaDeClases = [c1, c2, c3, c4];
-
+t1 = "tm-site-title";
+t2 = "tm-site-description";
+t3 = "tm-nav-link";
+t4 = "tm-nav-link"
+aaa= [t4]
+listaDeClases = [c1, c2, c3];
+listaTituloos = [t1, t2, t3];
 
 //FUNCION DEL COLOR DE LA PAGINA
 function colorCar() {
@@ -78,10 +83,22 @@ function colorCar() {
   }
 
   //Fondo de color oscuro (Predeterminado)
-if (true) {
+  if (true) {
     body.style.backgroundColor = "rgb(13,23,33)";
     container.style.backgroundColor = "rgb(21,32,43)";
     titulo.style.color = "white";
     logoPag.src = "img/TEDM-logo.png"
+    colorTituloos();
     colorParrafo();
+    }
+    
+    function colorTituloos() {
+      for (o = 0; o < listaTituloos.length; o++) {
+        var elementoxd = document.getElementsByClassName(listaTituloos[o]);
+        for (let o = 0; o < elementoxd.length; o++) {
+            elementoxd[o].style.color = "black";
+            elementoxd[o].style.textShadow = "none";
+            elementoxd[o].style.fontWeight = "550";
+      }
+      }
     }
