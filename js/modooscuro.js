@@ -73,18 +73,6 @@ function colorCar() {
     titulo.style.color = "white";
     logoPag.src = "img/TEDM-logo.png"
     colorParrafo();
-  } else if (cars.value == "rojo") {
-    body.style.backgroundColor = "rgb(68,10,10)";
-    container.style.backgroundColor = "rgb(108,10,10)";
-    titulo.style.color = "black";
-    logoPag.src = "img/TEDM-logo-blanco.png"
-    colorParrafo();
-  } else if (cars.value == "azul") {
-    body.style.backgroundColor = "rgb(10,10,68)";
-    container.style.backgroundColor = "rgb(10,10,98)";
-    titulo.style.color = "white";
-    logoPag.src = "img/TEDM-logo.png"
-    colorParrafo();
   } else if (cars.value == "negro") {
     body.style.backgroundColor = "rgb(5,5,5)";
     container.style.backgroundColor = "rgb(20,20,20)";
@@ -104,12 +92,6 @@ function colorParrafo() {
         titulo.style.color = "black";
       } else if (cars.value == "negro") {
         elemento[i].style.color = "#c7c7c7";
-      } else if (cars.value == "rojo") {
-        elemento[i].style.color = "#626364";
-        titulo.style.color = "black";
-      } else if (cars.value == "azul") {
-        elemento[i].style.color = "#626364";
-        titulo.style.color = "#c7c7c7";
       } else if (cars.value == "oscuro") {
         elemento[i].style.color = "#c7c7c7";
         titulo.style.color = "#c7c7c7";
@@ -273,6 +255,17 @@ function filtroPrecio() {
 
 }
 
+//Funcion de los titulos
+function colorTituloos() {
+  for (o = 0; o < listaTituloos.length; o++) {
+    var elementoxd = document.getElementsByClassName(listaTituloos[o]);
+    for (let o = 0; o < elementoxd.length; o++) {
+        elementoxd[o].style.color = "black";
+        elementoxd[o].style.textShadow = "none";
+        elementoxd[o].style.fontWeight = "550";
+  }
+  }
+}
 
 //Fondo de color oscuro (Predeterminado)
 if (true) {
@@ -284,13 +277,3 @@ colorTituloos();
 colorParrafo();
 }
 
-function colorTituloos() {
-  for (o = 0; o < listaTituloos.length; o++) {
-    var elementoxd = document.getElementsByClassName(listaTituloos[o]);
-    for (let o = 0; o < elementoxd.length; o++) {
-        elementoxd[o].style.color = "black";
-        elementoxd[o].style.textShadow = "none";
-        elementoxd[o].style.fontWeight = "550";
-  }
-  }
-}

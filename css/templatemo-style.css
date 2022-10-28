@@ -462,9 +462,27 @@ p, address {
 #tm-pagging-money{
   position: sticky;
   top: 2%;
+  left: 0%;
+  width: 330px;
+ /*antes era 300*/
+  text-align: center;
+  align-items: center;
+  z-index: 1;
+  margin: 7px auto 30px auto;
+  padding: 8px 24px;
+  border: 1px solid #2F956D;
+  font-size: 1.35rem;
+  background-color: #2F956D;
+  color: #ffff;
+  user-select: none;
+} 
+/*
+#tm-pagging-money{
+  position: sticky;
+  top: 2%;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 330px; /*antes era 300*/
+  width: 330px; 
   text-align: center;
   z-index: 1;
   margin: 7px 7px 30px 7px;
@@ -474,45 +492,8 @@ p, address {
   background-color: #2F956D;
   color: #ffff;
   user-select: none;
-} 
+} */
 
-@media (max-width: 400px) {
-  #tm-pagging-money{
-  position: sticky;
-  top: 5%;
-  left: 0%;
-  transform: translate(0%, 0);
-  width: 330px; /*antes era 300*/
-  text-align: center;
-  z-index: 1;
-  margin: 7px 7px 30px 8%;
-  padding: 8px 24px;
-  border: 1px solid #2F956D;
-  font-size: 1.35rem;
-  background-color: #2F956D;
-  color: #ffff;
-  user-select: none;
-} 
-/*
-@media (max-width: 400px) {
-  #tm-pagging-money{
-  position: sticky;
-  top: 2%;
-  left: 0%;
-  transform: translate(0%, 0);
-  width: 330px; 
-  text-align: center;
-  z-index: 1;
-  margin: 7px 7px 30px 8%;
-  padding: 8px 24px;
-  border: 1px solid #2F956D;
-  font-size: 1.35rem;
-  background-color: #2F956D;
-  color: #ffff;
-  user-select: none;
-} 
-*/
-}
 /*------------------------------------------------------------- BOTONES ---------------------------------------------------------*/
 .comprarOVender{
   margin-top: 20px;
@@ -533,6 +514,7 @@ p, address {
   
 }
 #botonVender{
+  margin-left: 5px;
   font-family: 'Open Sans', Arial, sans-serif;
   padding: 5px 21.625px;
   font-size: 1.05rem;
@@ -1055,5 +1037,5 @@ address {
   display: flex;
 }
 #modoOscureForm{
-  margin: 2% 6% 1% 0% ;
+  margin: 25px 6% 15px 0% ;
 }
