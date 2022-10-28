@@ -43,14 +43,8 @@
 		</div>
 
 		<main>
-			<header class="row tm-welcome-section">
-				<h2 class="col-12 text-center tm-section-title" id="title">Acerca de Todo el dinero del Mundo</h2>
-				<p class="col-12 text-center">Este es nuestro primer proyecto de página web, realizado con HTML, CSS y Javascript.
-                Es una página de compras imaginarias en el hipotético caso de que tuvieras todo el dinero del mundo.</p>
-			</header>
-
-			<div id="undiv">
-				<form oninput="colorCar()">
+			<div id="modoOscure">
+				<form oninput="colorCar()" id="modoOscureForm">
 					<select id="cars" name="cars" value="default">
 					  <option class="opcion" value="oscuro">Modo Oscuro</option>
 					  <option class="opcion" value="default" >Modo Claro</option>
@@ -60,8 +54,15 @@
 					  
 					</select>
 				</form>
-				<br>
+				<br />
 			</div>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title" id="title">Acerca de Todo el dinero del Mundo</h2>
+				<p class="col-12 text-center">Este es nuestro primer proyecto de página web, realizado con HTML, CSS y Javascript.
+                Es una página de compras imaginarias en el hipotético caso de que tuvieras todo el dinero del mundo.</p>
+			</header>
+
+
 			<div class="tm-container-inner tm-persons">
 				<div class="row">
 					<article class="col-lg-6">

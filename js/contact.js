@@ -1,3 +1,23 @@
+$(document).ready(function(){
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }	
+});
+
+
+
+
 
 //-------Variables---------
 
@@ -13,13 +33,19 @@ c1 = "col-12 text-center";
 c2 = "tm-person-about";
 c3 = "tm-mb-p";
 c4 = "tm-feature-description";
+c5 = "text-center"
+c6 = "tm-contact-link"
+c7 = "address"
 t1 = "tm-site-title";
 t2 = "tm-site-description";
 t3 = "tm-nav-link";
-t4 = "tm-nav-link"
-t7 = "tm-feature-description"
-aaa= [t4]
-listaDeClases = [c1, c2, c3, t7];
+t5 = "panel";
+z2 = "accordion";
+c8 = "panel-accordion"
+z1 = "form-control"
+bbb= [t5]
+aaa= [z1,z2]
+listaDeClases = [c1, c2, c3, c5, c6, c7, c8];
 listaTituloos = [t1, t2, t3];
 
 //FUNCION DEL COLOR DE LA PAGINA
@@ -91,6 +117,8 @@ function colorCar() {
     logoPag.src = "img/TEDM-logo.png"
     colorTituloos();
     colorParrafo();
+    colorPanel();
+    colorformGroup();
     }
     
     function colorTituloos() {
@@ -103,3 +131,24 @@ function colorCar() {
       }
       }
     }
+    function colorPanel() {
+        for (o = 0; o < bbb.length; o++) {
+          var elementoxd = document.getElementsByClassName(bbb[o]);
+          for (let o = 0; o < elementoxd.length; o++) {
+              elementoxd[o].style.backgroundColor = "transparent";
+              elementoxd[o].style.color = "rgb(199, 199, 199)";
+
+        }
+        }
+      }
+      function colorformGroup() {
+        for (o = 0; o < aaa.length; o++) {
+          var elementoxd = document.getElementsByClassName(aaa[o]);
+          for (let o = 0; o < elementoxd.length; o++) {
+              elementoxd[o].style.backgroundColor = "transparent";
+              elementoxd[o].style.border= "1px solid #2F956D";
+
+
+        }
+        }
+      }

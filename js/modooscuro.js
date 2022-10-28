@@ -15,8 +15,6 @@ c3 = "tm-mb-45";
 t1 = "tm-site-title";
 t2 = "tm-site-description";
 t3 = "tm-nav-link";
-t4 = "tm-nav-link"
-aaa= [t4]
 listaDeClases = [c1, c2, c3];
 listaTituloos = [t1, t2, t3];
 //-------------------------------

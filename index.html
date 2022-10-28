@@ -39,9 +39,22 @@
 		</div>
 
 		<main>
+			<div id="modoOscure">
+				<form oninput="colorCar()" id="modoOscureForm">
+					<select id="cars" name="cars" value="default">
+					  <option class="opcion" value="oscuro">Modo Oscuro</option>
+					  <option class="opcion" value="default" >Modo Claro</option>
+					  <option class="opcion" value="rojo">Modo Rojo</option>
+					  <option class="opcion" value="azul">Modod Azul</option>
+					  <option class="opcion" value="negro">Modo Negro</option>
+					  
+					</select>
+				</form>
+			</div>
 			<header class="row tm-welcome-section">
 				<h2 class="col-12 text-center tm-section-title" id="title">Bienvenido a Todo el dinero del mundo, el juego.</h2>
 				<p class="col-12 text-center">El juego consiste en gastar todo el dinero del mundo (cifra sacada del PIB de todos los países en el 2020) en cualquier cosa que tu quieras. Los ítems están ordenados del menor al mayor precio. Si quieres deshacer una compra, puedes venderlo al mismo precio. ¡Inténtalo tú! </p>
+
 			</header>
 			     
 			<div class="tm-paging-links">
@@ -57,18 +70,9 @@
             <p id="tm-pagging-money" onclick="dineroRestante()">s/ 370 000 000 000 000.00</p>
 
 			<div id="undiv">
-				<form oninput="colorCar()">
-					<select id="cars" name="cars" value="default">
-					  <option class="opcion" value="oscuro">Modo Oscuro</option>
-					  <option class="opcion" value="default" >Modo Claro</option>
-					  <option class="opcion" value="rojo">Modo Rojo</option>
-					  <option class="opcion" value="azul">Modod Azul</option>
-					  <option class="opcion" value="negro">Modo Negro</option>
-					  
-					</select>
-				</form>
-				<br />
-				<form oninput="filtroPrecio()" >
+
+				<div id="filtroMaM">
+				<form oninput="filtroPrecio()" id="filtroMaMForm" >
 					<select id="filtro" name="filtro" onclick="filtroPrecio()" value="filtro2">
 						<option class="opcion" value="menoramayor">Menor a Mayor</option>
 						<option class="opcion" value="mayoramenor" >Mayor a Menor</option>
@@ -79,7 +83,7 @@
 						  
 					</select>
 				</form>
-
+				</div>
 				<br />
 			</div>
 

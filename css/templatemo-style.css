@@ -326,7 +326,10 @@ p, address {
 }
 
 .tm-welcome-section {
-  margin: 60px auto;
+  margin-top: 0;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 655px;
 }
 
@@ -1032,4 +1035,25 @@ address {
 #filtro:hover{
   background-color: #2F956D;
   color: white;
+}
+
+
+#filtroMaM{
+  align-self: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  display: flex;
+}
+
+#filtroMaMForm{
+  margin: 2% 8% 2% 0% ;
+}
+#modoOscure{
+  align-self: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  display: flex;
+}
+#modoOscureForm{
+  margin: 2% 6% 1% 0% ;
 }

@@ -17,9 +17,9 @@ Simple House
 https://templatemo.com/tm-539-simple-house
 
 -->
-<body> 
+<body id="body"> 
 
-	<div class="container">
+	<div id="container">
 	<!-- Top box -->
 		<!-- Logo & Site Name -->
 		<div class="placeholder">
@@ -27,10 +27,10 @@ https://templatemo.com/tm-539-simple-house
 				<div class="tm-header">
 					<div class="row tm-header-inner">
 						<div class="col-md-6 col-12">
-							<img src="img/TEDM-logo-blanco.png" alt="Logo" class="tm-site-logo" /> 
+							<img src="img/TEDM-logo-blanco.png" alt="Logo" class="tm-site-logo" id="logoPag" /> 
 							<div class="tm-site-text-box">
-								<h1 class="tm-site-title" >Todo el dinero del Mundo</h1>
-								<h6 class="tm-site-description">¿Y si tuvieras todo el dinero del mundo?</h6>	
+								<h1 class="tm-site-title" id="tm-site-title" >Todo el dinero del Mundo</h1>
+								<h6 class="tm-site-description" id="tm-site-description">¿Y si tuvieras todo el dinero del mundo?</h6>	
 							</div>
 						</div>
 						<nav class="col-md-6 col-12 tm-nav">
@@ -46,8 +46,21 @@ https://templatemo.com/tm-539-simple-house
 		</div>
 
 		<main>
+			<div id="modoOscure">
+				<form oninput="colorCar()" id="modoOscureForm">
+					<select id="cars" name="cars" value="default">
+					  <option class="opcion" value="oscuro">Modo Oscuro</option>
+					  <option class="opcion" value="default" >Modo Claro</option>
+					  <option class="opcion" value="rojo">Modo Rojo</option>
+					  <option class="opcion" value="azul">Modod Azul</option>
+					  <option class="opcion" value="negro">Modo Negro</option>
+					  
+					</select>
+				</form>
+				<br />
+			</div>
 			<header class="row tm-welcome-section">
-				<h2 class="col-12 text-center tm-section-title">Contact Page</h2>
+				<h2 class="col-12 text-center tm-section-title" id="title">Contact Page</h2>
 				<p class="col-12 text-center">You may use <a rel="nofollow" href="https://www.ltcclock.com/downloads/simple-contact-form/" target="_blank">Simple Contact Form</a> to send email to your inbox. You can modify and use this template for your website. Header image has a parallax effect. Total 3 HTML pages included in this template.</p>
 			</header>
 
@@ -77,7 +90,7 @@ https://templatemo.com/tm-539-simple-house
 					<div class="col-md-6">
 						<div class="tm-address-box">
 							<h4 class="tm-info-title tm-text-success">Our Address</h4>
-							<address>
+							<address class="address">
 								180 Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus 10550
 							</address>
 							<a href="tel:080-090-0110" class="tm-contact-link">
@@ -120,23 +133,23 @@ https://templatemo.com/tm-539-simple-house
 						<div class="tm-accordion">
 							<button class="accordion">1. ¿Cómo te llamas?</button>
 							<div class="panel">
-							  <p>Crazy Dave, mentira me llamo Diego Valer, pero tú puedes llamarme Diego Valer.</p>
+							  <p class="panel-accordion">Crazy Dave, mentira me llamo Diego Valer, pero tú puedes llamarme Diego Valer.</p>
 							</div>
 							
 							<button class="accordion">2. ¿Cuál es tu película favorita?</button>
 							<div class="panel">
-							  <p>Tengo muchas, pero si eligo una, me quedo con Volver al Futuro 1 y 2. Pero también me gustan casi todas las películas de Marvel, de Harry Potter, Terminator, Shrek, Interestelar, Sherlock Holmes y muchos más.</p>
+							  <p class="panel-accordion">Tengo muchas, pero si eligo una, me quedo con Volver al Futuro 1 y 2. Pero también me gustan casi todas las películas de Marvel, de Harry Potter, Terminator, Shrek, Interestelar, Sherlock Holmes y muchos más.</p>
 							</div>
 							
 							<button class="accordion">3. ¿Actor(riz) favorito(a)?</button>
 							<div class="panel">
-							  <p>Imposible decidir por uno, pero mis favoritos son Will Smith, Robert Downey Jr, Jonny Depp, Leonardo DiCaprio, Tom Cruise, Bruce Wills y otros más.</p>
+							  <p class="panel-accordion">Imposible decidir por uno, pero mis favoritos son Will Smith, Robert Downey Jr, Jonny Depp, Leonardo DiCaprio, Tom Cruise, Bruce Wills y otros más.</p>
 							  <!-- <p>Redistributing this template as a downloadable ZIP file on any template collection site is strictly prohibited. You will need to <a href="https://templatemo.com/contact">contact TemplateMo</a> for additional permissions about our templates. Thank you.</p> -->
 							</div>
 							
 							<button class="accordion">4. ¿Comida favorita?</button>
 							<div class="panel">
-								<p>Ceviche.</p>
+								<p class="panel-accordion">Ceviche.</p>
 							</div>
 						</div>	
 					</div>
@@ -150,23 +163,6 @@ https://templatemo.com/tm-539-simple-house
 	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/parallax.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			var acc = document.getElementsByClassName("accordion");
-			var i;
-			
-			for (i = 0; i < acc.length; i++) {
-			  acc[i].addEventListener("click", function() {
-			    this.classList.toggle("active");
-			    var panel = this.nextElementSibling;
-			    if (panel.style.maxHeight) {
-			      panel.style.maxHeight = null;
-			    } else {
-			      panel.style.maxHeight = panel.scrollHeight + "px";
-			    }
-			  });
-			}	
-		});
-	</script>
+	<script src="js/contact.js"></script>
 </body>
 </html>
