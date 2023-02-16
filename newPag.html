@@ -9,73 +9,60 @@
         <link rel="icon" type="image/x-icon" href="imgNewPag/" />
     </head>
 
+    <!------------------------------------  Body  -------------------------------------------->
     <body id="body" class="scrollable">
+        <!------------------------------ Container --------------------------------->
         <div id="container">
             <div id="title">
+
+                <!------------------------- title --------------------------->
                 <h1>Multitask</h1>
-                <div id="imputs">
-                    <ul id="ul-imputs">  
+                <!----------------------------------------------------------->
+
+                <!------------------- Url and button section ------------------->
+                <div id="inputs">
+                    <ul id="ul-inputs">  
                         <li>
-                    <div id="imputtext">
-                        <input type="text" placeholder="Enter url" id="inputUrl">
-                    </div>
-                </li>  
-                <li>
-                    <div id="checkContainer">
-                        <div class="toggle-button-cover">
-                            <div class="button-cover">
-                                <div class="button r" id="button-3">
-                                    <input type="checkbox" class="checkbox">
-                                    <div class="knobs"></div>
-                                    <div class="layer"></div>
+                            <input type="text" placeholder="Enter url" id="inputUrl" pattern="^https://.*" title="Por favor, introduce un enlace que comience con https://">
+                            <button onclick="cambiarTexto()" id="bubuton">→</button>
+                            <p id="p" ></p>
+                        </li>  
+                        <li>
+                            <div class="toggle-button-cover">
+                                <div class="button-cover">
+                                    <div class="button r" id="button-3">
+                                        <input type="checkbox" class="checkbox">
+                                        <div class="knobs"></div>
+                                        <div class="layer"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div></li>
-                </ul>
+                        </li>
+                    </ul>
                 </div>
+                <!-------------------------------------------------------------->
+
+                <!------------------------ Game Content ------------------------>
                 <div id="gameContent">
                     <iframe src="index.html" title="Iframe Example" ></iframe>
                     <iframe src="2048Game.html" title="Iframe Example" ></iframe>
-                    <iframe src="https://www.youtube.com/" title="Iframe Example" ></iframe>
-                    <iframe src="flappyBird.html" title="Iframe Example" ></iframe>
-                    <iframe src="https://www.twitch.tv/rivers_gg" title="Iframe Example" ></iframe>
+                    <iframe src="https://wwaw.youtube.com/" title="Iframe Example" ></iframe>
+                    <iframe src="flappyBird.ahtml" title="Iframe Example" id="flappyBird"></iframe>
+                    <iframe src="https://wwaw.twitch.tv/rivers_gg" title="Iframe Example" ></iframe>
                     <iframe src="index.html" title="Iframe Example" ></iframe>
-                </div>    
-                
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
+                </div>
+                <!-------------------------------------------------------------->   
+
             </div>
         </div>
+        <!-------------------------------------------------------------------------->
 
+
+        <!-------------------- Scripts ---------------------->
         <script src="scriptsNewPag/newPag.js"></script>
+        <!--------------------------------------------------->
     </body>
-
+    <!--------------------------------------------------------------------------------------->
 </html>
 
 
