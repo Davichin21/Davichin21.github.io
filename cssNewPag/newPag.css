@@ -1,7 +1,7 @@
 
 /* ------- body ------- */
 #body {
-    background-color: #0d0f12;
+    background-color: #0d0f12; 
     margin: 0;
     padding: 0;
 
@@ -12,34 +12,30 @@
 
 /* ----- container ----- */
 #container {
-    padding-top: 1px;
-    height: 100%;
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #242a30;    
-}
-
-#title{
     text-align: center;
-} 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
 /*----------------------*/
 
 
 
 /* ------ Url and button section ------- */
 #inputs{
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 100px;
-    padding-left: 100px;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
 }
 
 #ul-inputs{
+    margin: 0;
+    padding: 0;
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: center;
 }
 /* -------------------------------------- */
 
@@ -51,6 +47,7 @@ ul{
 }
 
 h1{
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 60px;
@@ -58,8 +55,8 @@ h1{
     font-family: 'comic Sans';
 }
 
-li{
-    display: flex;
+.li{
+    display: block;
 }
 
 iframe{
@@ -67,7 +64,8 @@ iframe{
     border: none;
     height:375px ;
     width: 450px;
-
+    text-align: left;
+    justify-content: center;
 }
 /* ----------------------------- */
 
@@ -90,9 +88,11 @@ iframe{
 
 /* ------------ URl input ----------- */
 #inputUrl{
+    margin-left: 10px;
     border: none;
     border-bottom: 2px solid black;
     padding: 10px;
+    padding-left: 10px;
     font-size: 16px;
     font-family: "Helvetica Neue", sans-serif;
     color: white;
@@ -105,8 +105,40 @@ iframe{
 }
 #bubuton{
     width: 41px;
-    height: 40.5px;
+    height: 40px;
     margin-left: 10px;
+    background-color: rgb(34, 34, 34);
+    color: rgb(185, 185, 185);
+    font-size: 16px;
+    text-align:center;
+    padding: 0px auto 0px auto ;
+    margin: auto auto auto 10px ;
+    border: none;
+    border-bottom: 2px solid black;
+}
+#bubuton:focus {
+    border-color: #26a0d8;   
+}
+#p{
+    color: rgb(189, 189, 189);
+    font-size: 18px;
+    padding: 0;
+    margin: auto auto auto 15px; 
+    width: 420px;
+    align-items: left; 
+    text-align: left;
+}
+#aa{
+    color: rgb(145, 145, 145);
+    padding: 0px;
+    margin: 0;
+}
+.item{
+    display: inline-block;
+    position: relative;
+    width: 41px;
+    height: 28px;
+    padding-top: 11px;
     background-color: rgb(34, 34, 34);
     color: rgb(185, 185, 185);
     font-size: 16px;
@@ -116,39 +148,90 @@ iframe{
     border: none;
     border-bottom: 2px solid black;
 }
-#bubuton:focus {
-    border-color: #26a0d8;   
+.item > a{
+    color: #000;
+    text-decoration: none;
 }
-#p{
-    font-size: 18px;
+.item .menu{
+    display: none;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    position: absolute;
+    min-width: 150px;
+}
+.item:hover .menu {
+    display: block;
+}
+.item .menu ul{
     padding: 0;
-    margin: auto auto auto 15px; 
-    width: 420px;
-    align-items: left; 
+    margin: 0;
+    list-style: none;
     text-align: left;
+}
+.item .menu li a{
+    color: black;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+.item .menu li a:hover{
+    background-color: #03A9F4;
+    color: white;
 }
 /* ---------------------------------- */
 
+/*----------------- Button Add ------------------*/
+.conteiner-button{
+    text-align: right;
+    padding-right: 20px;
+}
+#buttonAdd {
+    width: 40px;
+    height: 40px;
+    background-color: #4CAF50; /* color de fondo */
+    border: none; /* sin borde */
+    color: #006a9b; /* color de texto */
+    text-align: center; /* centrar texto */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+    cursor: pointer;
+    line-height: 40px; /* centrar verticalmente */
+  }
+  
 
+/*-----------------------------------------------*/
 
 /* --------------- Resposive ---------------- */
+
 @media (max-width: 990px){
-li{
+.li{
     display: block;
 }
 #p{
+    margin-top: 10px;
     width: 260px;
+}
+}
+@media (max-width: 875px){
+.li{
+    display: block;
+}
+#p{
+     width: 260px;
 }
 }
 @media (max-width: 775px) {
 #p{
     width: 260px;
 }
-li{
+.li{
     display: block;
 }
 }
-
 @media (max-width: 730px) {
     #inputs{
         justify-content: space-between;
@@ -158,8 +241,6 @@ li{
         padding-left: 60px;
     }
 }
-
-
 @media (max-width: 600px) {
     iframe{
         margin: 20px auto 20px auto;
@@ -177,7 +258,19 @@ li{
     }
     
 }
-
+@media (max-width: 480px) {
+    #inputUrl{
+        width: 150px;
+        border: none;
+        border-bottom: 2px solid black;
+        padding: 10px;
+        font-size: 16px;
+        font-family: "Helvetica Neue", sans-serif;
+        color: white;
+        background-color: rgb(34, 34, 34);
+        outline: none;
+    }    
+}
 @media (max-width: 445px) {
     iframe{
         margin: 20px auto 20px auto;
@@ -194,6 +287,235 @@ li{
         padding-left: 15px;
     }
     
+}
+@media (max-width: 410px) {
+    iframe{
+        margin: 20px auto 20px auto;
+        border: none;
+        height:350px ;
+        width: 300px;    
+    
+    }
+    #inputUrl{
+        width: 120px;
+        border: none;
+        border-bottom: 2px solid black;
+        padding: 10px;
+        font-size: 16px;
+        font-family: "Helvetica Neue", sans-serif;
+        color: white;
+        background-color: rgb(34, 34, 34);
+        outline: none;
+    }    
+}
+@media (max-width: 380px) {
+    iframe{
+        margin: 20px auto 20px auto;
+        border: none;
+        height:350px ;
+        width: 300px;    
+    
+    }
+    #inputUrl{
+        display: block;
+        text-align: center;
+        width: 170px;
+        border: none;
+        border-bottom: 2px solid black;
+        padding: 10px ;
+        font-size: 16px;
+        font-family: "Helvetica Neue", sans-serif;
+        color: white;
+        background-color: rgb(34, 34, 34);
+        outline: none;
+    }    
+    .item{
+        position: relative;
+        width: 41px;
+        height: 28px;
+        padding-top: 11px;
+        background-color: rgb(34, 34, 34);
+        color: rgb(185, 185, 185);
+        font-size: 16px;
+        text-align:center;
+        padding: 1px auto 2px auto ;
+        margin: 10px 110px auto 10px ;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+    #bubuton{
+        
+        width: 41px;
+        height: 40px;
+        margin-left: 10px;
+        background-color: rgb(34, 34, 34);
+        color: rgb(185, 185, 185);
+        font-size: 16px;
+        text-align:center;
+        padding: 0px auto 0px auto ;
+        margin: 10px auto auto 10px ;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+    #p{
+        margin-top: 10px;
+        width: 200px;
+   }
+}
+@media (max-width: 330px) {
+    iframe{
+        margin: 20px auto 20px auto;
+        border: none;
+        height:350px ;
+        width: 280px;    
+    
+    }
+    #inputUrl{
+        display: block;
+        text-align: center;
+        width: 130px;
+        border: none;
+        border-bottom: 2px solid black;
+        padding: 10px ;
+        font-size: 16px;
+        font-family: "Helvetica Neue", sans-serif;
+        color: white;
+        background-color: rgb(34, 34, 34);
+        outline: none;
+    }    
+    .item{
+        position: relative;
+        width: 41px;
+        height: 28px;
+        padding-top: 11px;
+        background-color: rgb(34, 34, 34);
+        color: rgb(185, 185, 185);
+        font-size: 16px;
+        text-align:center;
+        padding: 1px auto 2px auto ;
+        margin: 10px 100px auto 10px ;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+    #bubuton{
+        
+        width: 41px;
+        height: 40px;
+        margin-left: 10px;
+        background-color: rgb(34, 34, 34);
+        color: rgb(185, 185, 185);
+        font-size: 16px;
+        text-align:center;
+        padding: 0px auto 0px auto ;
+        margin: 10px auto auto 10px ;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+    #p{
+        margin-top: 10px;
+        width: 170px;
+   }
+}
+@media (max-width: 320px) {
+    #inputUrl{
+        display: block;
+        text-align: center;
+        width: 130px;
+        border: none;
+        border-bottom: 2px solid black;
+        padding: 10px ;
+        font-size: 16px;
+        font-family: "Helvetica Neue", sans-serif;
+        color: white;
+        background-color: rgb(34, 34, 34);
+        outline: none;
+    }    
+    .item{
+        position: relative;
+        width: 41px;
+        height: 28px;
+        padding-top: 11px;
+        background-color: rgb(34, 34, 34);
+        color: rgb(185, 185, 185);
+        font-size: 16px;
+        text-align:center;
+        padding: 1px auto 2px auto ;
+        margin: 10px 80px auto 10px ;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+    #bubuton{
+        
+        width: 41px;
+        height: 40px;
+        margin-left: 10px;
+        background-color: rgb(34, 34, 34);
+        color: rgb(185, 185, 185);
+        font-size: 16px;
+        text-align:center;
+        padding: 0px auto 0px auto ;
+        margin: 10px auto auto 10px ;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+    #p{
+        margin-top: 10px;
+        width: 150px;
+   }
+}
+@media (max-width: 300px) {
+    iframe{
+        margin: 20px auto 20px auto;
+        border: none;
+        height:350px ;
+        width: 250px;    
+    
+    }
+    #inputUrl{
+        display: block;
+        text-align: center;
+        width: 100px;
+        border: none;
+        border-bottom: 2px solid black;
+        padding: 10px ;
+        font-size: 16px;
+        font-family: "Helvetica Neue", sans-serif;
+        color: white;
+        background-color: rgb(34, 34, 34);
+        outline: none;
+    }    
+    .item{
+        position: relative;
+        width: 41px;
+        height: 28px;
+        padding-top: 11px;
+        background-color: rgb(34, 34, 34);
+        color: rgb(185, 185, 185);
+        font-size: 16px;
+        text-align:center;
+        padding: 1px auto 2px auto ;
+        margin: 10px 40px auto 10px ;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+    #bubuton{
+        
+        width: 41px;
+        height: 40px;
+        margin-left: 10px;
+        background-color: rgb(34, 34, 34);
+        color: rgb(185, 185, 185);
+        font-size: 16px;
+        text-align:center;
+        padding: 0px auto 0px auto ;
+        margin: 10px auto auto 10px ;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+    #p{
+        margin-top: 10px;
+        width: 110px;
+   }
 }
 /*-------------------------------------------*/
 
