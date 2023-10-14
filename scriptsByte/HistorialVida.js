@@ -30,6 +30,7 @@ contadorAno++;
     /*p en vez de historial*/ 
     p.innerHTML += "Tienes " + contadorAno + " Años" ;
 
+
     
 /*const p1 = document.createElement("p");
 
@@ -138,7 +139,7 @@ bottonE.onclick = function () {
 
 
 //barra de progreso
-if(true) {
+if(false) {
     const progressBar = document.getElementById("progress");
 
     // Función para actualizar el porcentaje de la barra de progreso

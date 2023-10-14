@@ -8,16 +8,16 @@
         <link href="cssByte/bit.css" rel="stylesheet" />
         <link rel="icon" type="image/x-icon" href="imgByte/logoBit3.png" />
     </head>
-    <body id="body">
+    <body id="body" class="scrollable">
          <!------------------------------- Contenido Central ------------------------------> 
-        <div id="container"> 
+        <div id="container" > 
 
             <!-- Barra Menu --> 
             <div id="menu">
-                    <ul class="tm-nav-ul">
+                    <ul class="tm-nav-ul" id="uldemierda">
                         <li class="tm-nav-li" id="bottonMenu"><a ><button id="bottonMenu2"><img src="imgByte/bottonMenu.png" alt="Menu" id="logoMenu"></button></a></li>
                         <li class="tm-nav-li" id="tituloBit"><img src="imgByte/logoBit.png" alt="ByteLife" id="logoT">&nbspByteLife</li>
-                        <li class="tm-nav-li" id="bottonMDios"><a ><button onclick="" id="bottonMDios2">Modo Dios</button></a></li> 
+                        <li class="tm-nav-li" id="bottonMDios"><button onclick="" id="bottonMDios2">Modo Dios</button></li> 
                     </ul>
             </div>
             <!----------------> 
@@ -66,53 +66,31 @@
             <!-------------------> 
 
             <!-- Barras de Porcentaje --> 
-            <div id="barraPorcentaje">
-
-                    <ul class="tm-nav-ul" id="barraPorcentaje2">
-                        <li class="tm-nav-li" id="barra1">
-                            <div class="barra3">
-                                <img src="imgByte/caritafeliz.png" alt="caritafeliz" id="caritafeliz">
-                                <div id="progress-bar">
-                                    <div id="progress"></div>
-                                </div>
-                            </div>
-                            <div class="barra3">
-                                <img src="imgByte/caritafeliz.png" alt="caritafeliz" id="caritafeliz">
-                                <div id="progress-bar">
-                                    <div id="progress"></div>
-                                </div>
-                            </div>
-                            <div class="barra3">
-                                <img src="imgByte/caritafeliz.png" alt="caritafeliz" id="caritafeliz">
-                                <div id="progress-bar">
-                                    <div id="progress"></div>
-                                </div>
-                            </div>
-                            
-                        </li>
-                        <li class="tm-nav-li" id="barra2">
-                            <div class="barra3">
-                                <img src="imgByte/caritafeliz.png" alt="caritafeliz" id="caritafeliz">
-                                <div id="progress-bar">
-                                    <div id="progress"></div>
-                                </div>
-                            </div>
-                            <div class="barra3">
-                                <img src="imgByte/caritafeliz.png" alt="caritafeliz" id="caritafeliz">
-                                <div id="progress-bar">
-                                    <div id="progress"></div>
-                                </div>
-                            </div>
-                            <div class="barra3">
-                                <img src="imgByte/caritafeliz.png" alt="caritafeliz" id="caritafeliz">
-                                <div id="progress-bar">
-                                    <div id="progress"></div>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
-
+            <div id="div3">
+                <div class="div2">
+                    <div class="div1">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress"></div>
+                  </div>
+                </div>
+                <div class="div1">
+                  <div class="progress-bar">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress"></div>
+                  </div>
+                </div>
+                  </div>
             </div>
             <!-------------------------> 
             <!--Actividades-->
@@ -141,16 +119,10 @@
                 <ul  id="relaciones23"></ul>
                 <ul  id="relaciones23"></ul>
             </div>
-            <div id="fullName">
-                <div id="name"></div>
-                <div id="sName"></div>
-                <div id="pais"></div>
-            </div>
         </div>
 
         <!-----------------------------------------------------------------------------------------------> 
         <script src="/scriptsByte/Actividades.js"></script>   
-        <script src="/scriptsByte/decimal.js"></script>
         <script src="/scriptsByte/bit.js"></script>
         <script src="/scriptsByte/HistorialVida.js" type="module"></script> 
     </body>
